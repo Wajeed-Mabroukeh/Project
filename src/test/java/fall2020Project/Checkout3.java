@@ -10,7 +10,7 @@ public class Checkout3 {
 
 	
 	private String name;
-	private int price;
+	private int price,result;
 	private CheckB1 B= new CheckB1();
 	//Scenario3
 	@Given("the price of a {string} is 40c")
@@ -30,7 +30,7 @@ public class Checkout3 {
 	@Then("the total price should be 40c")
 	public void theTotalPriceShouldBe40c() {
 	    // Write code here that turns the phrase above into concrete actions
-	   int result = B.valueCheck();
+	   result =B.valueCheck();
 	   assertTrue(result == 40);
 	}
 }
